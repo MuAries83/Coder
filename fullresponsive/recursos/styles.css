@@ -104,8 +104,6 @@ a:hover{
         padding: 10px 5px 10px 5px;
         width: 100%;
     }
-<<<<<<< HEAD
-=======
     .cuerpo__img{
         width: 50%;
     }
@@ -113,7 +111,6 @@ a:hover{
         transition: all 1s;
         transform:rotateY(360deg);
     }
->>>>>>> Animaciones
     .costado_sup{
         grid-area: costado_sup;
         display: flex;
@@ -126,17 +123,11 @@ a:hover{
         text-align: center;
         text-decoration: none;
     }
-<<<<<<< HEAD
-    .costado_sup div img{
-        width: 50px;
-        margin: 5px 0px;
-=======
     .costado_sup div img:hover{
         width: 70%;
         margin-top: 20px;
         transition: all 1s;
         transform: scale(1.1);
->>>>>>> Animaciones
     }
     .costado_inf{
         grid-area: costado_inf;
@@ -150,17 +141,11 @@ a:hover{
         text-align: center;
         text-decoration: none;
     }
-<<<<<<< HEAD
-    .costado_inf div img{
-        width: 35px;
-        margin: 5px 0px;
-=======
     .costado_inf div img:hover{
         width: 50%;
         margin: 10px 10px;
         transition: all 1s;
         transform: scale(1.1);
->>>>>>> Animaciones
     }
     .pie{
         grid-area: pie;
@@ -209,14 +194,16 @@ a:hover{
         padding: 5px 10px 5px 10px;
         display: flex;
         background-color: #1e7aae;
+        width: 100%;
     }
     .encabezado ul{
         list-style: none;
         font-size: 16px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         display: flex;
+        width: 100%;
         align-items: center;
-        justify-items: center;
+        justify-content: space-between;
     }
     .encabezado ul li{
         padding: 2px;
@@ -257,17 +244,11 @@ a:hover{
         text-align: center;
         text-decoration: none;
     }
-<<<<<<< HEAD
-    .costado_sup div img{
-        width: 65px;
-        margin: 10px 0px;
-=======
     .costado_sup div img:hover{
         width: 70%;
         margin-top: 20px;
         transition: all 1s;
         transform: scale(1.1);
->>>>>>> Animaciones
     }
     .costado_inf{
         grid-area: costado_inf;
@@ -281,17 +262,11 @@ a:hover{
         text-align: center;
         text-decoration: none;
     }
-<<<<<<< HEAD
-    .costado_inf div img{
-        width: 45px;
-        margin: 10px 0px;
-=======
     .costado_inf div img:hover{
         width: 50%;
         margin: 10px 10px;
         transition: all 1s;
         transform: scale(1.1);
->>>>>>> Animaciones
     }
     .pie{
         grid-area: pie;
@@ -351,14 +326,16 @@ a:hover{
         grid-area: encabezado;
         display: flex;
         background-color: #1e7aae;
+        width: 100%;
     }
     .encabezado ul{
         list-style: none;
         font-size: 25px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         display: flex;
+        width: 100%;
         align-items: center;
-        justify-items: space-between;
+        justify-content: space-between;
     }
     .encabezado ul li{
         padding: 5px;
@@ -404,17 +381,11 @@ a:hover{
         text-align: center;
         text-decoration: none;
     }
-<<<<<<< HEAD
-    .costado_sup div img{
-        width: 80px;
-        margin: 15px 0px;
-=======
     .costado_sup div img:hover{
         width: 70%;
         margin-top: 20px;
         transition: all 1s;
         transform: scale(1.2);
->>>>>>> Animaciones
     }
     .costado_inf{
         grid-area: costado_inf;
@@ -429,15 +400,10 @@ a:hover{
         text-decoration: none;
     }
     .costado_inf div img{
-<<<<<<< HEAD
-        width: 60px;
-        margin: 15px 0px;
-=======
         width: 50%;
         margin: 20px 10px;
         transition: all 1s;
         transform: scale(1.2);
->>>>>>> Animaciones
     }
     .pie{
         grid-area: pie;
@@ -497,14 +463,16 @@ a:hover{
         grid-area: encabezado;
         display: flex;
         background-color: #1e7aae;
+        width: 100%;
     }
     .encabezado ul{
         list-style: none;
         font-size: 32px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         display: flex;
+        width: 100%;
         align-items: center;
-        justify-items: space-between;
+        justify-content: space-between;
     }
     .encabezado ul li{
         padding: 7px;
@@ -550,13 +518,8 @@ a:hover{
         text-align: center;
         text-decoration: none;
     }
-<<<<<<< HEAD
-    .costado_sup div img{
-        width: 90px;
-=======
     .costado_sup div img:hover{
         width: 75%;
->>>>>>> Animaciones
         margin-top: 15px;
         transition: all 1s;
         transform: scale(1.2);
@@ -573,17 +536,11 @@ a:hover{
         text-align: center;
         text-decoration: none;
     }
-<<<<<<< HEAD
-    .costado_inf div img{
-        width: 75px;
-        margin: 10px 0px;
-=======
     .costado_inf div img:hover{
         width: 70%;
         margin: 10px 10px;
         transition: all 1s;
         transform: scale(1.2);
->>>>>>> Animaciones
     }
     .pie{
         grid-area: pie;
@@ -643,14 +600,16 @@ a:hover{
         grid-area: encabezado;
         display: flex;
         background-color: #1e7aae;
+        width: 100%;
     }
     .encabezado ul{
         list-style: none;
         font-size: 42px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         display: flex;
+        width: 100%;
         align-items: center;
-        justify-items: space-between;
+        justify-content: space-between;
     }
     .encabezado ul li{
         padding: 7px;
@@ -692,13 +651,8 @@ a:hover{
         text-align: center;
         text-decoration: none;
     }
-<<<<<<< HEAD
-    .costado_sup div img{
-        width: 100%;
-=======
     .costado_sup div img:hover{
         width: 75%;
->>>>>>> Animaciones
         margin-top: 15px;
         transition: all 1s;
         transform: scale(1.3);
@@ -715,13 +669,8 @@ a:hover{
         text-align: center;
         text-decoration: none;
     }
-<<<<<<< HEAD
-    .costado_inf div img{
-        width: 80%;
-=======
     .costado_inf div img:hover{
         width: 70%;
->>>>>>> Animaciones
         margin: 10px 10px;
         transition: all 1s;
         transform: scale(1.3);
@@ -780,12 +729,15 @@ a:hover{
         grid-area: encabezado;
         background-color:#1e7aae;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        width: 100%;
+        
     }
     .encabezado ul{
         list-style: none;
         display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
     }
     .encabezado ul li{
         padding: 60px;
