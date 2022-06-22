@@ -1,0 +1,847 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.principal{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px 75px 20px 2fr 1fr 1fr 100px;
+        grid-template-areas:"navbar navbar"
+                            "encabezado encabezado"
+                            "noticias noticias"
+                            "centro centro"
+                            "costado_sup costado_inf"
+                            "pie pie"
+                            "redes redes";
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a:hover{
+    text-decoration: underline;
+}
+@media(min-width:300px){
+    .navbar{
+        grid-area: navbar;
+        display: flex;
+        justify-content: stretch;
+        align-content: stretch;
+    }
+    .navbar div img{
+        width: 100%;
+    }
+    .encabezado{
+        grid-area: encabezado;
+        padding: 5px 10px 5px 10px;
+        display: flex;
+        background-color: #1e7aae;
+    }
+    .encabezado ul{
+        list-style: none;
+        font-size: 16px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+    .encabezado ul li{
+        padding: 2px;
+        color: #ffffff;
+    }
+    .noticias{
+        grid-area: noticias;
+        display: flex;
+        justify-content: flex-start;
+        background-color: gray;
+    }
+    .cuerpo{
+        grid-area: centro;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: antiquewhite;
+    }
+    .cuerpo h1{
+        display: flex;
+        justify-content: center;
+    }
+    .cuerpo h2{
+        display: flex;
+        justify-content: center;
+    }
+    .cuerpo p{
+        margin: 13px;
+        padding: 5px 10px;
+        font-size: 15px;
+        color: blue;
+        text-decoration: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+    .cuerpo div{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .cuerpo div ul{
+        margin: 15px;
+        font-size: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration: none;
+        color:blue;
+        padding: 20px 20px;
+    }
+    .cuerpo div img{
+        padding: 10px 5px 10px 5px;
+        width: 100%;
+    }
+    .cuerpo__img{
+        width: 50%;
+    }
+    .costado_sup{
+        grid-area: costado_sup;
+        display: flex;
+    }
+    .costado_sup h4{
+        margin-top: 3px;
+        font-size: 13px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    .costado_sup div img{
+        width: 70%;
+        margin-top: 20px;
+    }
+    .costado_inf{
+        grid-area: costado_inf;
+        display: flex;
+    }
+    .costado_inf h3{
+        margin-top: 3px;
+        font-size: 13px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    .costado_inf div img{
+        width: 50%;
+        margin: 10px 10px;
+    }
+    .pie{
+        grid-area: pie;
+        display: flex;
+        background-color: #1e7aae;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .pie h5{
+        font-size: 15px;
+        color: #ffffff;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    .pie h6{
+        font-size: 12px;
+        color: #ffffff;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    .redes{
+        grid-area: redes;
+        display: flex;
+        background-color: #1e7aae;
+        align-items: center;
+        justify-content: center;
+    }
+    .redes div img{
+        padding: 30px;
+    }
+}
+@media (min-width:480px){
+    .navbar{
+        grid-area: navbar;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar div img{
+        width: 100%;
+    }
+    .encabezado{
+        grid-area: encabezado;
+        padding: 5px 10px 5px 10px;
+        display: flex;
+        background-color: #1e7aae;
+    }
+    .encabezado ul{
+        list-style: none;
+        font-size: 16px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+    .encabezado ul li{
+        padding: 2px;
+        color: #ffffff;
+    }
+    .noticias{
+        grid-area: noticias;
+        display: flex;
+        justify-content: flex-start;
+        background-color: gray;
+    }
+    .cuerpo{
+        grid-area: centro;
+        display: flex;
+        align-items: center;
+        background-color: antiquewhite;
+    }
+    .cuerpo div img{
+        padding: 10px 5px 10px 5px;
+        width: 100%;
+    }
+    .cuerpo__img{
+        width: 40%;
+    }
+    .costado_sup{
+        grid-area: costado_sup;
+        display: flex;
+    }
+    .costado_sup h4{
+        margin-top: 3px;
+        font-size: 13px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    .costado_sup div img{
+        width: 70%;
+        margin-top: 20px;
+    }
+    .costado_inf{
+        grid-area: costado_inf;
+        display: flex;
+    }
+    .costado_inf h3{
+        margin-top: 3px;
+        font-size: 13px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    .costado_inf div img{
+        width: 50%;
+        margin: 10px 10px;
+    }
+    .pie{
+        grid-area: pie;
+        display: flex;
+        background-color: #1e7aae;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .pie h5{
+        font-size: 18px;
+        color: #ffffff;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    .pie h6{
+        font-size: 14px;
+        color: #ffffff;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    .redes{
+        grid-area: redes;
+        display: flex;
+        background-color: #1e7aae;
+        align-items: center;
+        justify-content: center;
+    }
+    .redes div img{
+        padding: 30px;
+    }
+    }
+@media(min-width:600px){
+    .principal{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 150px 95px 30px 2fr 1fr 1fr 100px;
+        grid-template-areas:"navbar navbar navbar"
+                            "encabezado encabezado encabezado"
+                            "noticias noticias noticias"
+                            "centro centro centro"
+                            "costado_sup .. costado_inf"
+                            "pie pie pie"
+                            "redes redes redes";
+    }
+    .navbar{
+        grid-area: navbar;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar div img{
+        width: 100%;
+    }
+    .encabezado{
+        grid-area: encabezado;
+        display: flex;
+        background-color: #1e7aae;
+    }
+    .encabezado ul{
+        list-style: none;
+        font-size: 25px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-items: space-between;
+    }
+    .encabezado ul li{
+        padding: 5px;
+        color: #ffffff;
+    }
+    .noticias{
+        grid-area: noticias;
+        display: flex;
+        justify-content: flex-start;
+        background-color: gray;
+        padding: 0px 5px;
+        font-size: 25px;
+        color: #ffffff;
+        text-decoration: none;
+
+    }
+    .cuerpo{
+        grid-area: centro;
+        display: flex;
+        align-items: center;
+        background-color: antiquewhite;
+    }
+    .cuerpo div img{
+        padding: 10px 5px 10px 5px;
+        width: 100%;
+    }
+    .cuerpo__img{
+        width: 30%;
+    }
+    .costado_sup{
+        grid-area: costado_sup;
+        display: flex;
+    }
+    .costado_sup h4{
+        margin-top: 10px;
+        font-size: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    .costado_sup div img{
+        width: 70%;
+        margin-top: 20px;
+    }
+    .costado_inf{
+        grid-area: costado_inf;
+        display: flex;
+    }
+    .costado_inf h3{
+        margin-top: 10px;
+        font-size: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    .costado_inf div img{
+        width: 50%;
+        margin: 20px 10px;
+    }
+    .pie{
+        grid-area: pie;
+        display: flex;
+        background-color: #1e7aae;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .pie h5{
+        font-size: 18px;
+        color: #ffffff;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    .pie h6{
+        font-size: 15px;
+        color: #ffffff;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    .redes{
+        grid-area: redes;
+        display: flex;
+        background-color: #1e7aae;
+        align-items: center;
+        justify-content: center;
+    }
+    .redes div img{
+        padding: 30px;
+    }
+}
+@media(min-width:768px){
+    .principal{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 250px 125px 50px 2fr 1fr 1fr 100px;
+        grid-template-areas:"navbar navbar navbar"
+                            "encabezado encabezado encabezado"
+                            "noticias noticias noticias"
+                            "centro centro centro"
+                            "costado_sup .. costado_inf"
+                            "pie pie pie"
+                            "redes redes redes";
+    }
+    .navbar{
+        grid-area: navbar;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar div img{
+        width: 100%;
+    }
+    .encabezado{
+        grid-area: encabezado;
+        display: flex;
+        background-color: #1e7aae;
+    }
+    .encabezado ul{
+        list-style: none;
+        font-size: 32px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-items: space-between;
+    }
+    .encabezado ul li{
+        padding: 7px;
+        color: #ffffff;
+    }
+    .noticias{
+        grid-area: noticias;
+        display: flex;
+        justify-content: flex-start;
+        background-color: gray;
+        padding: 0px 5px;
+        font-size: 38px;
+        color: #ffffff;
+        text-decoration: none;
+
+    }
+    .cuerpo{
+        grid-area: centro;
+        display: flex;
+        align-items: center;
+        background-color: antiquewhite;
+    }
+    .cuerpo div img{
+        padding: 10px 5px 10px 5px;
+        width: 100%;
+    }
+    .cuerpo__img{
+        width: 20%;
+    }
+    .costado_sup{
+        grid-area: costado_sup;
+        display: flex;
+    }
+    .costado_sup h4{
+        margin-top: 10px;
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    .costado_sup div img{
+        width: 75%;
+        margin-top: 15px;
+    }
+    .costado_inf{
+        grid-area: costado_inf;
+        display: flex;
+    }
+    .costado_inf h3{
+        margin-top: 10px;
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    .costado_inf div img{
+        width: 70%;
+        margin: 10px 10px;
+    }
+    .pie{
+        grid-area: pie;
+        display: flex;
+        background-color: #1e7aae;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .pie h5{
+        font-size: 18px;
+        color: #ffffff;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    .pie h6{
+        font-size: 15px;
+        color: #ffffff;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    .redes{
+        grid-area: redes;
+        display: flex;
+        background-color: #1e7aae;
+        align-items: center;
+        justify-content: center;
+    }
+    .redes div img{
+        padding: 30px;
+    }
+}
+@media (min-width:1023px){
+    .principal{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 400px 100px 50px 2fr 1fr 1fr 100px;
+        grid-template-areas:"navbar navbar navbar"
+                            "encabezado encabezado encabezado"
+                            "noticias noticias noticias"
+                            "centro centro centro"
+                            "costado_sup .. costado_inf"
+                            "pie pie pie"
+                            "redes redes redes";
+    }
+    .navbar{
+        grid-area: navbar;
+        display: flex;
+        justify-content: center;
+    }
+    .navbar div img{
+        width: 100%;
+    }
+    .encabezado{
+        grid-area: encabezado;
+        display: flex;
+        background-color: #1e7aae;
+    }
+    .encabezado ul{
+        list-style: none;
+        font-size: 42px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-items: space-between;
+    }
+    .encabezado ul li{
+        padding: 7px;
+        color: #ffffff;
+    }
+    .noticias{
+        grid-area: noticias;
+        display: flex;
+        justify-content: flex-start;
+        background-color: gray;
+        padding: 0px 5px;
+        font-size: 38px;
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .cuerpo{
+        grid-area: centro;
+        display: flex;
+        align-items: center;
+        background-color: antiquewhite;
+    }
+    .cuerpo div img{
+        padding: 10px 5px 10px 5px;
+        width: 100%;
+    }
+    .costado_sup{
+        grid-area: costado_sup;
+        display: flex;
+    }
+    .costado_sup h4{
+        margin-top: 10px;
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    .costado_sup div img{
+        width: 75%;
+        margin-top: 15px;
+    }
+    .costado_inf{
+        grid-area: costado_inf;
+        display: flex;
+    }
+    .costado_inf h3{
+        margin-top: 10px;
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    .costado_inf div img{
+        width: 70%;
+        margin: 10px 10px;
+    }
+    .pie{
+        grid-area: pie;
+        display: flex;
+        background-color: #1e7aae;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .pie h5{
+        font-size: 28px;
+        color: #ffffff;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    .pie h6{
+        font-size: 25px;
+        color: #ffffff;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        text-decoration: none;
+    }
+    .redes{
+        grid-area: redes;
+        display: flex;
+        background-color: #1e7aae;
+        align-items: center;
+        justify-content: center;
+    }
+    .redes div img{
+        padding: 30px;
+    }
+}
+@media (min-width:1200px){
+    .principal{
+        display: grid;
+        grid-template-columns: 170px 1fr 250px;
+        grid-template-rows: 200px 40px 1fr 1fr 120px;
+        grid-template-areas:"navbar encabezado encabezado"
+                            "navbar noticias   noticias"
+                            "centro centro     costado_sup"
+                            "centro centro     costado_inf"
+                            "pie    pie        redes"
+    }
+    .navbar{
+        grid-area: navbar;
+        background-color: #1e7aae;
+        margin: 0;
+        display: flex;
+        align-items:stretch;
+    }
+    .encabezado{
+        grid-area: encabezado;
+        background-color:#1e7aae;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .encabezado ul{
+        list-style: none;
+        display: flex;
+    }
+    .encabezado ul li{
+        padding: 60px;
+    }
+    .encabezado ul li a{
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .noticias{
+        grid-area: noticias;
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration: none;
+        background-color: darkgrey;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .cuerpo{
+        grid-area: centro;
+        background-color: antiquewhite;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        padding: 50px 10px;
+        flex-direction: column;
+    }
+    .cuerpo h1{
+        display: flex;
+        justify-content: center;
+    }
+    .cuerpo h2{
+        display: flex;
+        justify-content: center;
+    }
+    .cuerpo p{
+        padding: 30px 380px;
+        justify-content: center;
+        font-size: 15px;
+        color: blue;
+        text-decoration: none;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+    }
+    .cuerpo div{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .cuerpo div ul{
+        margin-left: 400px;
+        font-size: 15px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration: none;
+        color:blue;
+    }
+    .cuerpo div img{
+        width: 100%;
+        align-self: center;
+    }
+    .analisis__img{
+        position: absolute;
+        top: 350px;
+        left: 1300px;
+    }
+    .nosotros__img{
+        position: absolute;
+        top: 410px;
+        left: 1280px;
+    }
+    .nosotros__img1{
+        position: absolute;
+        top: 520px;
+        left: 250px;
+    }
+    .nosotros__img2{
+        position: absolute;
+        top: 300px;
+        left: 250px;
+    }
+    .juego__img{
+        position: absolute;
+        top: 340px;
+        left: 250px;
+    }
+    .juego__img1{
+        width: 110px;
+        position: absolute;
+        top: 450px;
+        left: 1300px;
+    }
+    .juego__img2{
+        position: absolute;
+        top: 625px;
+        left: 250px;
+    }
+    .juego__img3{
+        position: absolute;
+        top: 580px;
+        left: 1300px;
+    }
+    .costado_sup{
+        grid-area: costado_sup;
+        background-color:#E3F2F7;
+        display: flex;
+        align-items:flex-start;
+    }
+    .costado_sup h3{
+        padding: 20px 0px;
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .costado_sup img{
+        padding: 15px;
+        width: 30%;
+    }
+    .costado_inf{
+        grid-area: costado_inf;
+        background-color: azure;
+        display: flex;
+        align-items: flex-start;
+    }
+    .costado_inf h4{
+        padding: 15px 0px;
+        text-decoration: none;
+        font-size: 20px;
+        color:black ;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .costado_inf img{
+        padding: 15px;
+        width: 30%;
+    }
+    .pie{
+        grid-area: pie;
+        background-color: #1e7aae;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .pie h5{
+        font-size: 25px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration: none;
+        color: white;
+    }
+    .pie h6{
+        font-size: 18px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration: none;
+        color: #ffffff;
+    }
+    .redes{
+        grid-area: redes;
+        background-color: #1e7aae;
+    }
+    .redes div{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
