@@ -102,12 +102,10 @@ a:hover{
         padding: 10px 5px 10px 5px;
         width: 100%;
     }
-    .cuerpo__img{
-        width: 50%;
-    }
     .costado_sup{
         grid-area: costado_sup;
         display: flex;
+        justify-content: space-around;
     }
     .costado_sup h4{
         margin-top: 3px;
@@ -117,12 +115,13 @@ a:hover{
         text-decoration: none;
     }
     .costado_sup div img{
-        width: 70%;
-        margin-top: 20px;
+        width: 50px;
+        margin: 5px 0px;
     }
     .costado_inf{
         grid-area: costado_inf;
         display: flex;
+        justify-content: space-around;
     }
     .costado_inf h3{
         margin-top: 3px;
@@ -132,8 +131,8 @@ a:hover{
         text-decoration: none;
     }
     .costado_inf div img{
-        width: 50%;
-        margin: 10px 10px;
+        width: 35px;
+        margin: 5px 0px;
     }
     .pie{
         grid-area: pie;
@@ -217,6 +216,7 @@ a:hover{
     .costado_sup{
         grid-area: costado_sup;
         display: flex;
+        justify-content: space-around;
     }
     .costado_sup h4{
         margin-top: 3px;
@@ -226,12 +226,13 @@ a:hover{
         text-decoration: none;
     }
     .costado_sup div img{
-        width: 70%;
-        margin-top: 20px;
+        width: 65px;
+        margin: 10px 0px;
     }
     .costado_inf{
         grid-area: costado_inf;
         display: flex;
+        justify-content: space-around;
     }
     .costado_inf h3{
         margin-top: 3px;
@@ -241,8 +242,8 @@ a:hover{
         text-decoration: none;
     }
     .costado_inf div img{
-        width: 50%;
-        margin: 10px 10px;
+        width: 45px;
+        margin: 10px 0px;
     }
     .pie{
         grid-area: pie;
@@ -280,7 +281,7 @@ a:hover{
 @media(min-width:600px){
     .principal{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 100px 1fr;
         grid-template-rows: 150px 95px 30px 2fr 1fr 1fr 100px;
         grid-template-areas:"navbar navbar navbar"
                             "encabezado encabezado encabezado"
@@ -342,6 +343,7 @@ a:hover{
     .costado_sup{
         grid-area: costado_sup;
         display: flex;
+        justify-content: space-around;
     }
     .costado_sup h4{
         margin-top: 10px;
@@ -351,12 +353,13 @@ a:hover{
         text-decoration: none;
     }
     .costado_sup div img{
-        width: 70%;
-        margin-top: 20px;
+        width: 80px;
+        margin: 15px 0px;
     }
     .costado_inf{
         grid-area: costado_inf;
         display: flex;
+        justify-content: space-around;
     }
     .costado_inf h3{
         margin-top: 10px;
@@ -366,8 +369,8 @@ a:hover{
         text-decoration: none;
     }
     .costado_inf div img{
-        width: 50%;
-        margin: 20px 10px;
+        width: 60px;
+        margin: 15px 0px;
     }
     .pie{
         grid-area: pie;
@@ -405,7 +408,7 @@ a:hover{
 @media(min-width:768px){
     .principal{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 150px 1fr;
         grid-template-rows: 250px 125px 50px 2fr 1fr 1fr 100px;
         grid-template-areas:"navbar navbar navbar"
                             "encabezado encabezado encabezado"
@@ -467,6 +470,7 @@ a:hover{
     .costado_sup{
         grid-area: costado_sup;
         display: flex;
+        justify-content: space-around;
     }
     .costado_sup h4{
         margin-top: 10px;
@@ -476,12 +480,13 @@ a:hover{
         text-decoration: none;
     }
     .costado_sup div img{
-        width: 75%;
+        width: 90px;
         margin-top: 15px;
     }
     .costado_inf{
         grid-area: costado_inf;
         display: flex;
+        justify-content: space-around;
     }
     .costado_inf h3{
         margin-top: 10px;
@@ -491,8 +496,8 @@ a:hover{
         text-decoration: none;
     }
     .costado_inf div img{
-        width: 70%;
-        margin: 10px 10px;
+        width: 75px;
+        margin: 10px 0px;
     }
     .pie{
         grid-area: pie;
@@ -530,7 +535,7 @@ a:hover{
 @media (min-width:1023px){
     .principal{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 200px 1fr;
         grid-template-rows: 400px 100px 50px 2fr 1fr 1fr 100px;
         grid-template-areas:"navbar navbar navbar"
                             "encabezado encabezado encabezado"
@@ -588,6 +593,7 @@ a:hover{
     .costado_sup{
         grid-area: costado_sup;
         display: flex;
+        justify-content: space-around;
     }
     .costado_sup h4{
         margin-top: 10px;
@@ -597,12 +603,13 @@ a:hover{
         text-decoration: none;
     }
     .costado_sup div img{
-        width: 75%;
+        width: 100%;
         margin-top: 15px;
     }
     .costado_inf{
         grid-area: costado_inf;
         display: flex;
+        justify-content: space-around;
     }
     .costado_inf h3{
         margin-top: 10px;
@@ -612,7 +619,7 @@ a:hover{
         text-decoration: none;
     }
     .costado_inf div img{
-        width: 70%;
+        width: 80%;
         margin: 10px 10px;
     }
     .pie{
