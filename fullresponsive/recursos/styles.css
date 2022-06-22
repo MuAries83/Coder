@@ -30,8 +30,8 @@ a:hover{
     .navbar{
         grid-area: navbar;
         display: flex;
-        justify-content: stretch;
-        align-content: stretch;
+        justify-content: center;
+        align-content: center;
     }
     .navbar div img{
         width: 100%;
@@ -41,14 +41,16 @@ a:hover{
         padding: 5px 10px 5px 10px;
         display: flex;
         background-color: #1e7aae;
+        width: 100%;
     }
     .encabezado ul{
         list-style: none;
-        font-size: 16px;
+        font-size: 13px;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         display: flex;
         align-items: center;
-        justify-items: center;
+        justify-content: space-between;
+        width: 100%;
     }
     .encabezado ul li{
         padding: 2px;
