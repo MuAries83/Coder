@@ -105,10 +105,9 @@ a:hover{
     .cuerpo__img{
         width: 50%;
     }
-    .cuerpo div img{
+    .cuerpo div img:hover{
         transition: all 1s;
-        transform: translate(0px, 15px) rotate(360deg);
-        width: 200px;
+        transform:rotateY(360deg);
     }
     .costado_sup{
         grid-area: costado_sup;
@@ -219,10 +218,9 @@ a:hover{
     .cuerpo__img{
         width: 40%;
     }
-    .cuerpo div img{
+    .cuerpo div img:hover{
         transition: all 1s;
-        transform: translate(0px, 15px) rotate(360deg);
-        width: 300px;
+        transform:rotate(360deg);
     }
     .costado_sup{
         grid-area: costado_sup;
@@ -344,7 +342,7 @@ a:hover{
     }
     .cuerpo div img{
         transition: all 1s;
-        transform: translate(0px, 15px) rotate(360deg);
+        transform: rotatex(360deg);
     }
     .cuerpo div img{
         padding: 10px 5px 10px 5px;
@@ -480,7 +478,7 @@ a:hover{
     }
     .cuerpo div img{
         transition: all 1s;
-        transform: translate(0px, 15px) rotate(360deg);
+        transform: rotatez(360deg);
     }
     .costado_sup{
         grid-area: costado_sup;
@@ -603,9 +601,9 @@ a:hover{
         padding: 10px 5px 10px 5px;
         width: 100%;
     }
-    .cuerpo div img{
+    .cuerpo div img:hover{
         transition: all 1s;
-        transform: translate(0px, 15px) rotate(360deg);
+        transform: rotateX(160deg);
     }
     .costado_sup{
         grid-area: costado_sup;
@@ -761,7 +759,7 @@ a:hover{
     }
     .cuerpo div img{
         transition: all 1s;
-        transform: translate(0px, 15px) rotate(360deg);
+        transform:rotatey(160deg);
     }
     .analisis__img{
         position: absolute;
