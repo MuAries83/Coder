@@ -105,6 +105,11 @@ a:hover{
     .cuerpo__img{
         width: 50%;
     }
+    .cuerpo div img{
+        transition: all 1s;
+        transform: translate(0px, 15px) rotate(360deg);
+        width: 200px;
+    }
     .costado_sup{
         grid-area: costado_sup;
         display: flex;
@@ -213,6 +218,11 @@ a:hover{
     }
     .cuerpo__img{
         width: 40%;
+    }
+    .cuerpo div img{
+        transition: all 1s;
+        transform: translate(0px, 15px) rotate(360deg);
+        width: 300px;
     }
     .costado_sup{
         grid-area: costado_sup;
@@ -331,6 +341,10 @@ a:hover{
         display: flex;
         align-items: center;
         background-color: antiquewhite;
+    }
+    .cuerpo div img{
+        transition: all 1s;
+        transform: translate(0px, 15px) rotate(360deg);
     }
     .cuerpo div img{
         padding: 10px 5px 10px 5px;
@@ -464,6 +478,10 @@ a:hover{
     .cuerpo__img{
         width: 20%;
     }
+    .cuerpo div img{
+        transition: all 1s;
+        transform: translate(0px, 15px) rotate(360deg);
+    }
     .costado_sup{
         grid-area: costado_sup;
         display: flex;
@@ -585,6 +603,10 @@ a:hover{
         padding: 10px 5px 10px 5px;
         width: 100%;
     }
+    .cuerpo div img{
+        transition: all 1s;
+        transform: translate(0px, 15px) rotate(360deg);
+    }
     .costado_sup{
         grid-area: costado_sup;
         display: flex;
@@ -648,7 +670,7 @@ a:hover{
         padding: 30px;
     }
 }
-@media (min-width:1200px){
+@media (min-width:1200px) and (max-width:1650px){
     .principal{
         display: grid;
         grid-template-columns: 170px 1fr 250px;
@@ -664,7 +686,6 @@ a:hover{
         background-color: #1e7aae;
         margin: 0;
         display: flex;
-        align-items:stretch;
     }
     .encabezado{
         grid-area: encabezado;
@@ -737,6 +758,10 @@ a:hover{
     .cuerpo div img{
         width: 100%;
         align-self: center;
+    }
+    .cuerpo div img{
+        transition: all 1s;
+        transform: translate(0px, 15px) rotate(360deg);
     }
     .analisis__img{
         position: absolute;
