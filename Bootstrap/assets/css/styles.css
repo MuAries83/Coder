@@ -15,8 +15,11 @@ a:link{
     text-decoration: none;
 }
 
-.titulo{
+.navbar{
     background-color: #1e7aae;
+}
+.cuerpo{
+    background-color: beige;
 }
 .noticias{
     background-color: gray;
