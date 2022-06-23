@@ -3,18 +3,6 @@
     padding: 0;
     box-sizing: 0;
 }
-a:hover{
-    text-decoration: none;
-}
-a:visited{
-    text-decoration: none;
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-a:link{
-    text-decoration: none;
-}
-
 .navbar{
     background-color: #1e7aae;
 }
